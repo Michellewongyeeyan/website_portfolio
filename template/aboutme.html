@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle's Portfolio</title>
+    <link rel="stylesheet" href="../static/aboutme.css">
+
+    <!--===icons===-->
+    <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+    <a class="backButton" href="">Back to Top ↑</a>
+    <header class="header">
+        <a href="#" class="logo">Michelle's Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" style="--i:1">Home</a>
+            <a href="{{ url_for('aboutme') }}" class="active" style="--i:2">About</a>
+            <a href="{{ url_for('login') }}" style="--i:3">Login</a>
+            <a href="{{ url_for('signup') }}"style="--i:4">Sign Up</a>
+            <a href="#" style="--i:5">Forum</a>
+        </nav>
+    </header>
+
+    <!--=========About section=========-->
+    <div class="My-container">
+        <section class="About section" id="about">
+            <h2 class="section_title">About Me</h2>
+
+        <div class="about_content">
+            <h1>I enjoy everything related to programming.</h1>
+            <p>I  have always been fascinated by the intricate world of coding
+                    and the limitless possibilities it offers. From the moment I 
+                    wrote my first line of code, I knew that programming was something 
+                    I wanted to pursue further. It brings me a sense of fulfillment 
+                    and accomplishment to see my ideas come to life through the power
+                    of programming.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+<!-- education section-->
+            <section class="education" id="education">
+                <h2 class="heading">My Journey</h2>
+
+                <div class="education-row">
+                    <div class="education-column">
+                        <h3 class="title">Education</h3>
+
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">2023-2024</div>
+                                    <h3>Master's degree - Cardiff University</h3>
+                                    <p>●Computing and IT Management (MSc):Learn IT knowledge in areas such as software and web development, e-commerce, and database management.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">2018-2020</div>
+                                    <h3>Bachelor's degree - The Education University of Hong Kong</h3>
+                                    <p>●Bachelor of Art in Teaching Chinese As a Second Language</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">2009-2016</div>
+                                    <h3>Hong Kong Diploma Of Secondary Education Examination </h3>
+                                    <p>●Lok Sin Tong Ku Chiu Man Secondary School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-column">
+                        <h3 class="title">Experience</h3>
+
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">2022-2023</div>
+                                    <h3>Sales and Marketing Assistant - Fremantle International Limited Company</h3>
+                                    <p>●Responsible for website design and video editing, marketing planning.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">2020-2022</div>
+                                    <h3>Ncs teaching assistant - DMHC Siu Ming Catholic Secondary School</h3>
+                                    <p>●Teaching Chinese to Non-Chinese Speaking Student</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year">Jun 2017 - July 2017</div>
+                                    <h3>New media editor - Hong Kong Satellite Television</h3>
+                                    <p>●News video editing,creating enhanced news content for online and social media</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </secrion>
+    <!-- skills section-->
+
+    <section class="skills section" id="skills">
+        <h2 class="skills_title">My skills</h2>
+
+
+    <div class="background-container">
+        <div class="row">
+            <div class="col">
+                <div class="sub-title">
+                    <h3>Programming Skills</h3>
+                </div>
+                <div class="skills-container">
+                    <!-- Programming Skills content here -->
+                    <div class="skill">
+                        <div class="subject">HTML</div>
+                        <div class="progress-bar" value="85%">
+                            <div class="progress-line" style="max-width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">CSS</div>
+                        <div class="progress-bar" value="75%">
+                            <div class="progress-line" style="max-width:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Javascript</div>
+                        <div class="progress-bar" value="70%">
+                            <div class="progress-line" style="max-width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Python</div>
+                        <div class="progress-bar" value="80%">
+                            <div class="progress-line" style="max-width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="sub-title">
+                    <h3>Professional Skills</h3>
+                </div>
+                <div class="skills-container">
+                    <!-- Professional Skills content here -->
+                    <div class="skill">
+                        <div class="subject">Web design</div>
+                        <div class="progress-bar" value="80%">
+                            <div class="progress-line" style="max-width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Web development</div>
+                        <div class="progress-bar" value="60%">
+                            <div class="progress-line" style="max-width:60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Graphic design</div>
+                        <div class="progress-bar" value="65%">
+                            <div class="progress-line" style="max-width:65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">SEO Marketing</div>
+                        <div class="progress-bar" value="85%">
+                            <div class="progress-line" style="max-width:85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- work section-->
+    <section class="work section" id="work">
+        <h2 class="work_title">My creations</h2>
+        <p class="download-text">shooting game (click the picture below to download exe.file)</p>
+        <div class="download-container">
+            <a href="C:\Users\c23078075\OneDrive - Cardiff University\Desktop\main.exe" download>
+                <img src="../static/pygamepic.png" alt="Download game" class="download-image">
+            </a>
+
+            <div class="code-container">
+                <pre class="code-scroll">
+                    <code>
+                        import pygame
+                        import sys
+                        import random
+                        import math
+                        
+                        
+                        
+                        pygame.init()
+                        pygame.mixer.init()
+                        
+                        
+                        WIDTH, HEIGHT = 800, 600
+                        FPS = 60
+                        BULLET_SPEED = 8
+                        ERRORCODE_SPEED = 5
+                        
+                        
+                        screen = pygame.display.set_mode((WIDTH, HEIGHT))
+                        pygame.display.set_caption("Simple Shooting Game")
+                        clock = pygame.time.Clock()
+                        
+                        
+                            
+                        
+                        player_image = pygame.image.load("../img/player.png").convert()
+                        bullet_image = pygame.image.load("../img/bullet.png").convert()
+                        errorcode_image = pygame.image.load("../img/Errorcode.png").convert()
+                        pygame.display.set_icon(player_image)
+                        
+                        
+                        player_image.set_colorkey((0, 0, 0))
+                        bullet_image.set_colorkey((0, 0, 0))
+                        errorcode_image.set_colorkey((0, 0, 0))
+                        
+                        
+                        player_image = pygame.transform.scale(player_image, (100, 100))
+                        
+                        
+                        errorcode_image = pygame.transform.scale(errorcode_image, (100, 80))
+                        
+                        
+                        player_rect = player_image.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+                        
+                        
+                        bullets = []
+                        
+                        
+                        errorcodes = []
+                        
+                        
+                        score = 0
+                        
+                        
+                        font = pygame.font.Font(None, 36)
+                        small_font = pygame.font.Font(None, 24)
+                        
+                        
+                        congratulations_text = small_font.render(
+                            "Yeah! You've overcome all obstacles to your programming education!",
+                            True, (255, 255, 255)
+                        )
+                        congratulations_rect = congratulations_text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+                        
+                        
+                        instructions_text = small_font.render(
+                            "Move your mouse to control the player. Left-click to shoot."
+                            "Avoid rocks and shoot them down to win!",
+                            True, (255, 255, 255)
+                        )
+                        instructions_rect = instructions_text.get_rect(topleft=(10, 10))
+                        
+                        # Start button
+                        start_button_text = small_font.render("Click here to start", True, (255, 255, 255))
+                        start_button_rect = start_button_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 50))
+                        
+                        # Retry button
+                        retry_button_text = small_font.render("Click here to retry.", True, (255, 255, 255))
+                        retry_button_rect = retry_button_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 50))
+                        
+                        
+                        retry_button_rect.inflate_ip(50, 50)
+                        
+                        def reset_game():
+                            global player_rect, bullets, errorcodes, score
+                            player_rect = player_image.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+                            bullets = []
+                            errorcodes = []
+                            score = 0
+                        
+                        # Game loop
+                        running = False
+                        frame = 0
+                        while not running:
+                            for event in pygame.event.get():
+                                if event.type == pygame.QUIT:
+                                    running = True
+                                elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                                    # Check if the mouse click is inside the start button
+                                    if start_button_rect.collidepoint(event.pos):
+                                        reset_game()
+                                        running = True
+                        
+                            # Draw everything
+                            screen.fill((0, 0, 0))
+                            screen.blit(player_image, player_rect)
+                            screen.blit(start_button_text, start_button_rect.topleft)
+                            screen.blit(instructions_text, instructions_rect)  # Draw instructions on top
+                            pygame.display.flip()
+                            clock.tick(FPS)
+                        
+                        # Main game loop
+                        running = True
+                        game_over = False
+                        while running:
+                            for event in pygame.event.get():
+                                if event.type == pygame.QUIT:
+                                    running = False
+                        
+                            if not game_over:
+                        
+                                mouse_x, mouse_y = pygame.mouse.get_pos()
+                        
+                        
+                                player_rect.centerx = mouse_x
+                                player_rect.centery = mouse_y
+                        
+                         
+                                mouse_click = pygame.mouse.get_pressed()
+                                if mouse_click[0] == 1:
+                                    bullet_rect = bullet_image.get_rect(center=player_rect.center)
+                                    bullets.append(bullet_rect)
+                        
+                        
+                                bullets = [bullet.move(0, -BULLET_SPEED) for bullet in bullets]
+                        
+                             
+                                if random.randint(0, 100) < 5:
+                                    errorcode_rect = errorcode_image.get_rect(
+                                        center=(random.randint(0, WIDTH), 0)
+                                    )
+                                    errorcodes.append(errorcode_rect)
+                        
+                          
+                                errorcodes = [errorcode.move(0, ERRORCODE_SPEED) for errorcode in errorcodes]
+                        
+                        
+                                for bullet in bullets[:]:
+                                    for errorcode in errorcodes[:]:
+                                        if bullet.colliderect(errorcode):
+                                            bullets.remove(bullet)
+                                            errorcodes.remove(errorcode)
+                                            score += 1
+                        
+                        
+                                errorcodes = [errorcode for errorcode in errorcodes if errorcode.bottom < HEIGHT]
+                        
+                            
+                                for errorcode in errorcodes:
+                                    if player_rect.colliderect(errorcode):
+                                        game_over = True
+                        
+                           
+                                r = int(math.sin(frame * 0.01) * 127 + 128)
+                                g = int(math.sin(frame * 0.02) * 127 + 128)
+                                b = int(math.sin(frame * 0.03) * 127 + 128)
+                                frame += 1
+                        
+                        
+                                screen.fill((r, g, b))
+                                screen.blit(player_image, player_rect)
+                                for bullet in bullets:
+                                    screen.blit(bullet_image, bullet)
+                                for errorcode in errorcodes:
+                                    screen.blit(errorcode_image, errorcode)
+                        
+                          
+                                score_text = font.render(f"Score: {score}", True, (255, 255, 255))
+                                screen.blit(score_text, (10, 50))  # Adjusted score display position
+                        
+                             
+                                screen.blit(instructions_text, instructions_rect)
+                        
+                                # Display congratulatory message and end the game when the score reaches 10
+                                if score >= 10:
+                                    screen.blit(congratulations_text, congratulations_rect)
+                                    pygame.display.flip()
+                                    pygame.time.delay(4000)  # Display the message for 4 seconds
+                                    game_over = True
+                        
+                            # Display retry button when the game ends
+                            if game_over:
+                                screen.blit(retry_button_text, retry_button_rect)
+                                pygame.display.flip()
+                        
+                                for event in pygame.event.get():
+                                    if event.type == pygame.QUIT:
+                                        running = False
+                                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                                
+                                        if retry_button_rect.collidepoint(event.pos):
+                                            reset_game()
+                                            game_over = False
+                        
+                            pygame.display.flip()
+                            clock.tick(FPS)
+                        
+                        
+                        
+                        pygame.quit()
+                        sys.exit()
+                        
+                        
+                        
+
+
+
+                    
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

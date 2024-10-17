@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@600&family=Lato&family=Poppins&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#1f242d;
+    font-family:"Poppins",sans-serif;
+    color:white;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:25px 10%;
+    color:white;
+}
+
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 27px;
+    cursor:default;
+    animation:slideLeft 1s ease forwards;
+    opacity:0;
+
+}
+
+.navbar a{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    padding:0px 16px;
+    font-weight: 600;
+    transition:0.3s all;
+    animation: navMenu 1s ease forwards;
+    animation-delay:calc(0.2s * var(--i));
+    opacity:0;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#0ef;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes navMenu{
+    0%{
+        transform:translateY(100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+
+/*======About Me======*/
+.My-container{
+    display:flex;
+    padding:10px 180px;
+    justify-content:center;
+    align-items:center;
+
+}
+.About .section_title::before {
+    content: '';
+    display: block;
+    width: 950px; 
+    height: 2px; 
+    background-color: #3498db;
+    margin: 0 auto; 
+    margin-bottom: 10px; 
+}
+
+.section_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about_content {
+    color:#a4b3f1;
+ }
+ .about_content p{
+    margin-top: 20px;
+    line-height: 1.8;
+    color:#8290cb;
+ }
+
+ .education .heading::before {
+    content: '';
+    display: block;
+    width: 950px; 
+    height: 2px; 
+    background-color: #3498db;
+    margin: 0 auto; 
+    margin-bottom: 10px; 
+}
+/*======Education======*/
+.education{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    min-height:auto;
+    padding-bottom:5rem;
+    margin:130px;
+    margin-top: 30px;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 60px;
+    margin-top: 30px;
+}
+
+.education-column {
+    width: 60%;
+    margin-left: 30px;
+    
+}
+
+.title {
+    color: #8290cb;
+    font-size: 20px;
+}
+
+.education-box,
+.experience-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.education-content,
+.experience-content {
+    background: linear-gradient(to right, #1e455f, rgb(124, 172, 209));
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 80%;
+}
+
+.education-content:hover,
+.experience-content:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 20px;
+}
+
+.year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9fb1fa;
+}
+
+h3 {
+    font-size: 15px;
+    color: #251d1d;
+    margin: 10px 0;
+}
+
+.education-content p {
+    font-size: 13px;
+    color: #efe6e6;
+    line-height: 1.6;
+}
+
+/*======skills======*/
+.skills_title::before {
+    content: '';
+    display: block;
+    width: 950px; 
+    height: 2px; 
+    background-color: #3498db;
+    margin-bottom: 10px; 
+}
+.skills_title{
+    margin-top: 30px;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    flex-basis: 46%;
+
+}
+
+.sub-title h3 {
+    position: relative;
+    color: #d6c5ce;
+    font-size: 22px;
+    font-family: helvetica;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.sub-title h3::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    top: 125%;
+    left: 0;
+    background-color: #808080;
+}
+
+.sub-title h3::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    top: calc(125% - 1px);
+    left: 0;
+    background-color: #5c5cb3;
+}
+.subject{
+	font-size: 18px;
+	font-weight: thin;
+	color: #808080;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+.progress-bar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background-color: #808080;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.progress-bar::after{
+	position: absolute;
+	content: attr(value);
+	top: -35px;
+	right: 0;
+	color: #808080;
+	font-size: 15px;
+}
+.progress-line{
+	position: absolute;
+	width: 0%;
+	height: 7px;
+	background-color: #60a0bc;
+	border-radius: 15px;
+	top: -1px;
+	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate{
+	100%{
+		width: 100%;
+	}
+}
+.progress-line::after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: #153c4f;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 8%;
+    }
+}
+
+
+
+
+
+
+.backButton {
+    position: fixed;
+    font-weight: 600;
+    bottom: 35px;
+    right: 35px;
+    z-index: 800;
+    text-decoration: none;
+    padding: 15px;
+    font-family: sans-serif;
+    color: rgb(255, 248, 248);
+    background: linear-gradient(135deg, #00c8ff, rgb(21, 73, 101));
+    border-radius: 100px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes  glow{
+    0% {
+        box-shadow: 0 0 5px #7700ff, 0 0 10px #a200ff, 0 0 15px #8c00ff;
+    }
+    100% {
+        box-shadow: 0 0 10px #5500ff, 0 0 20px #7300ff, 0 0 30px rgb(28, 196, 190);
+    }
+}
+
+
+.work_title::before {
+    content: '';
+    display: block;
+    width: 950px; 
+    height: 2px; 
+    background-color: #3498db;
+    margin-bottom: 10px; 
+
+}
+.work_title{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.download-text {
+    margin-left: 20px;
+}
+
+
+
+
+.download-container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.download-image {
+    width: 200px;
+    height: 200px;
+}
+
+.code-container {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+.code-container p {
+margin-left:80px;
+
+}
+
+
+.code-scroll {
+    white-space: pre-wrap;
+}
+

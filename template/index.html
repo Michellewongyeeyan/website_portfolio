@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle's Website</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <!--===Unicons===-->
+    <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+    <a class="backButton" href="">Back to Top ↑</a>
+    <header class="header">
+        <a href="#" class="logo">Michelle's Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" class="active"style="--i:1">Home</a>
+            <a href="{{ url_for('aboutme') }}"  style="--i:2">About</a>
+            <a href="{{ url_for('login') }}" style="--i:3">Login</a>
+            <a href="{{ url_for('signup') }}"style="--i:4">Sign Up</a>
+            <a href="#" style="--i:5">Forum</a>
+        </nav>
+    </header>
+    <!--=========Time Section=========-->
+
+    <div class="clock">
+        <div class="time-box">
+            <div class="time" id="time">12:00:00</div>
+        </div>
+    </div>
+    <div class="Today">
+        <div class="date-box">
+            <div class="date" id="date"></div>
+        </div>
+    </div>
+
+    <!--=========My Section=========-->
+    <div class="My-container">
+        <div class="info-side">
+            <h3 class="part-1">Hello,It's Me</h3>
+            <h1>Michelle Wong</h1>
+            <h3 class="part-2">And I'm a <span id="changing-text"></span></h3>
+            <p>Programming is the closest thing we have to a superpower.</p>
+            <!----====social media icons====---->
+            <a href="https://www.facebook.com/yeeyan.wong.1/"target="_blank"><i class="uil uil-facebook-f" style="--i:7"></i></a>
+            <a href="https://www.instagram.com/michelle.wong_yy?igsh=c205ZWlxeGVuZzVw&utm_source=qr"target="_blank"><i class="uil uil-instagram" style="--i:8"></i></a>
+            <a href="https://www.linkedin.com/in/yy-wong-3a05a9247/"target="_blank"><i class="uil uil-linkedin-alt" style="--i:9"></i></a>
+            <br/>
+            <button class="btn">
+                <a href="C:\Users\c23078075\OneDrive - Cardiff University\Desktop\CMT120_code\static\Wong Yee Yan, Michelle_CV.pdf" target="_blank">Download CV</a>
+            </button>
+        </div>
+
+        <div class="my-img">
+            <img src="../static/myicon.png" alt="My pic">
+        </div>
+    </div>
+
+        <!--=========Contact Section=========-->
+    <div class="contact">
+        <div class="contact-heading">
+            <h1>Contact Me</h1>
+            <p>Feel free to get in touch with me.</p>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+         <ul class="flashes">
+             {% for message in messages %}
+             <li>{{ message }}</li>
+             {% endfor %}
+         </ul>
+             {% endif %}
+            {% endwith %}
+        </div>
+        <form method="POST" action="/submit" autocomplete="off"  onsubmit="saveScrollPosition()">
+            <input type="text" name="user" placeholder="Your Full Name"/>
+            <input type="email" name="email" placeholder="Your E-Mail"/>
+            <textarea name="message" placeholder="Type Your Message Here.........."></textarea>
+            <button class="main-btn contact-btn">Submit</button>
+
+        </form>
+    </div>
+
+
+    
+    <!--linking js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="../static/script.js"></script>
+
+</body>
+</html>

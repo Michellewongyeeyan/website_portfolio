@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle's Website</title>
+    <link rel="stylesheet" href="../static/logout.css">
+    <!--===Unicons===-->
+    <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Michelle's Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" style="--i:1">Home</a>
+            <a href="{{ url_for('aboutme') }}"  style="--i:2">About</a>
+            <a href="{{ url_for('login') }}" style="--i:3">Login</a>
+            <a href="{{ url_for('signup') }}"style="--i:4">Sign Up</a>
+            <a href="#" style="--i:5">Forum</a>
+        </nav>
+    </header>
+
+    <title>Logout</title>
+<body>
+    <h1>Logout</h1>
+    <p>You have been successfully logged out.</p>
+    <a href="{{ url_for('home') }}">Go to Home</a>
+</body>
+</html>

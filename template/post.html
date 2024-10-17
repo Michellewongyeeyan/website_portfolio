@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <hr>
+    <h2>回覆</h2>
+    <ul>
+        {% for comment in comments %}
+        <li>{{ comment.content }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/new_comment" method="post">
+        <input type="hidden" name="post_id" value="{{ post.id }}">
+        <input type="text" name="content" placeholder="回覆內容" required>
+        <select name="user_id" required>
+            {% for user in post.user.comments %}
+            <option value="{{ user.id }}">{{ user.username }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="回覆">
+    </form>
+</body>
+</html>

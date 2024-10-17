@@ -1,0 +1,2 @@
+testing
+python -m flask --app main.py run

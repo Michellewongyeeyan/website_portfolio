@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@600&family=Lato&family=Poppins&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#1f242d;
+    font-family:"Poppins",sans-serif;
+    color:white;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:25px 10%;
+    color:white;
+}
+
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 27px;
+    cursor:default;
+    animation:slideLeft 1s ease forwards;
+    opacity:0;
+}
+
+.navbar a{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    padding:0px 16px;
+    font-weight: 600;
+    transition:0.3s all;
+    animation: navMenu 1s ease forwards;
+    animation-delay:calc(0.2s * var(--i));
+    opacity:0;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#0ef;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/signup.css">
+</head>
+<header class="header">
+    <a href="#" class="logo">Michelle's Portfolio</a>
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" style="--i:1">Home</a>
+        <a href="{{ url_for('aboutme') }}"  style="--i:2">About</a>
+        <a href="{{ url_for('login') }}" style="--i:3">Login</a>
+        <a href="{{ url_for('signup') }}" class="active" style="--i:4">Sign Up</a>
+        <a href="#" style="--i:5">Forum</a>
+    </nav>
+</header>
+<body>
+    <h2>Sign Up</h2>
+    <div class="signup-container">
+
+        <form method="POST" action="/signup" autocomplete="off">
+            <h3>username</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <h3>email</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h3>password</h3>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button> 
+
+            {% if success%}
+            <p class="success">{{success}}</p>
+              {% endif %}
+        
+            {% if error%}
+            <p class="error">{{ error}}</p>
+            {% endif %}
+            
+            <p>Already have an account? <a href="{{ url_for('login') }}">Log In here</a></p>
+
+
+            
+    
+        </form>
+    </div>
+
+</body>
+</html>

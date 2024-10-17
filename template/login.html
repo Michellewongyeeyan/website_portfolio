@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<header class="header">
+    <a href="#" class="logo">Michelle's Portfolio</a>
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" style="--i:1">Home</a>
+        <a href="{{ url_for('aboutme') }}"  style="--i:2">About</a>
+        <a href="{{ url_for('login') }}" class="active" style="--i:3">Login</a>
+        <a href="{{ url_for('signup') }}"style="--i:4">Sign Up</a>
+        <a href="#" style="--i:5">Forum</a>
+    </nav>
+</header>
+<body>
+    <h2>Login</h2>
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    <div class="Login-container">
+
+
+        <form method="POST" action="/login" autocomplete="off">
+            <h3>username</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <h3>password</h3>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <h4>------------or------------ </h4> <p>Create an account <a href="{{ url_for('signup') }}">Sign Up here</a></p>
+
+        </form>
+    </div>
+
+</body>
+</html>
